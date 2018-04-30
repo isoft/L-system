@@ -29,11 +29,7 @@ function setup() {
     currentgen = newGen(currentgen);
   }
   translate(cwidth/2,cheight/2);
-  //evaluate(currentgen);
-  line(0,0,0,-100);
-  translate(0,-100);
-  rotate(90);
-  line(0,-1,0,-100);
+  evaluate(currentgen);
 }
 
 function newGen(oldgen) {
